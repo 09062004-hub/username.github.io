@@ -1,0 +1,141 @@
+body {
+    font-family: 'Raleway', sans-serif; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Espaciado de línea */
+    background-color: #f3f4f6; /* Color de fondo suave */
+}
+
+header {
+    background: #c76c9c; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+nav ul {
+    list-style: none; /* Sin puntos de lista */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* En línea para horizontal */
+    margin-right: 20px; /* Espaciado entre enlaces */
+}
+
+nav a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 700; /* Negrita para enlaces */
+    transition: background-color 0.3s, color 0.3s; /* Transición de color */
+    padding: 10px 15px; /* Espaciado interno para parecer un botón */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 0 5px; /* Espaciado entre botones */
+    display: inline-block; /* Convertir en bloque en línea */
+}
+
+nav a:hover {
+    background-color: #fff; /* Color de fondo al pasar el ratón */
+    color: #c76c9c; /* Color del texto al pasar el ratón */
+}
+
+.social-bar {
+    position: fixed; /* Fija la barra en la pantalla */
+    left: 0; /* Alinear a la izquierda */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajustar para centrar exactamente */
+    width: 50px; /* Ancho fijo para la barra */
+}
+
+.social-button {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px; /* Espaciado interno para botones */
+    margin: 5px 0; /* Espaciado entre botones */
+    display: block; /* Cada botón ocupa una línea */
+    transition: opacity 0.3s; /* Transición de opacidad */
+    font-size: 20px; /* Tamaño de los íconos */
+}
+
+/* Estilos de los botones con colores de redes sociales */
+.social-button.facebook {
+    background: #3b5998; /* Color de fondo para Facebook */
+}
+
+.social-button.instagram {
+    background: #e1306c; /* Color de fondo para Instagram */
+}
+
+.social-button.twitter {
+    background: #1da1f2; /* Color de fondo para Twitter */
+}
+
+.social-button:hover {
+    opacity: 0.8; /* Efecto de opacidad al pasar el ratón */
+}
+
+section {
+    padding: 20px; /* Espaciado interno de las secciones */
+    margin: 20px auto; /* Espaciado entre secciones y centralizar */
+    max-width: 800px; /* Ancho máximo de las secciones */
+    background: white; /* Fondo blanco para secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más marcada */
+}
+
+h2 {
+    font-family: 'Playfair Display', serif; /* Nueva fuente para encabezados */
+    font-size: 2.5em; /* Tamaño de fuente aumentado */
+    color: #c76c9c; /* Color para encabezados */
+    text-align: center; /* Centrar encabezados */
+    text-transform: uppercase; /* Mayúsculas para un toque moderno */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.proyectos-container {
+    display: flex; /* Flexbox para los proyectos */
+    justify-content: space-around; /* Espaciado entre proyectos */
+    flex-wrap: wrap; /* Permitir que los proyectos se ajusten a varias líneas */
+}
+
+.proyecto {
+    background: #fff; /* Fondo blanco para proyectos */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 15px; /* Espaciado entre proyectos */
+    padding: 15px; /* Espaciado interno del proyecto */
+    transition: transform 0.3s; /* Transición para el efecto */
+    text-align: center; /* Centrar texto dentro de las tarjetas */
+    width: 300px; /* Ancho fijo para las tarjetas */
+}
+
+.proyecto:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.proyecto img {
+    max-width: 100%; /* Imagen responsiva */
+    height: auto; /* Mantener proporciones */
+    border-radius: 5px; /* Bordes redondeados en imágenes */
+}
+
+footer {
+    text-align: center; /* Centrar texto */
+    background: #c76c9c; /* Color de fondo del pie */
+    color: #fff; /* Color del texto */
+    padding: 15px 0; /* Espaciado interno */
+    font-family: 'Montserrat', sans-serif; /* Fuente para pie */
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: flex; /* Cambiar a flexbox para mejor ajuste */
+        flex-direction: column; /* Apilar verticalmente */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .proyectos-container {
+        flex-direction: column; /* Apilar proyectos en pantallas pequeñas */
+        align-items: center; /* Centrar proyectos */
+    }
+}
